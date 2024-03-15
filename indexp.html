@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .solved {
+            color: green;
+        }
+        .in-progress {
+            color: orange;
+        }
+        .unsolved {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complaint Status</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Type of Complaint</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Mess</td>
+                    <td class="solved">Solved</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Room</td>
+                    <td class="in-progress">In Progress</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Washroom</td>
+                    <td class="unsolved">Not Solved (Escalated)</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Security</td>
+                    <td class="in-progress">In Progress</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Others</td>
+                    <td class="unsolved">Not Solved</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
